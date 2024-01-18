@@ -1,4 +1,5 @@
 #include "monty.h"
+<<<<<<< HEAD
 bus_t bus = {NULL, NULL, NULL, 0};
 /**
  * * main - monty code interpreter
@@ -6,13 +7,23 @@ bus_t bus = {NULL, NULL, NULL, 0};
  * * @argv: monty file location
  * * Return: 0 on success
  */
+=======
+#include <stdio.h>
+bus_t bus = {NULL, NULL, NULL, 0};
+/**
+* main - monty code interpreter
+* @argc: number of arguments
+* @argv: monty file location
+* Return: 0 on success
+*/
+>>>>>>> 46f9cb9b7d2739b1e013fa65989bbd8aeec50771
 int main(int argc, char *argv[])
 {
-	char *content;
-	FILE *file;
+	char* content;
+	FILE* file;
 	size_t size = 0;
 	ssize_t read_line = 1;
-	stack_t *stack = NULL;
+	stack_t* stack = NULL;
 	unsigned int counter = 0;
 
 	if (argc != 2)
@@ -41,5 +52,5 @@ int main(int argc, char *argv[])
 	}
 	free_stack(stack);
 	fclose(file);
-	return (0);
+return (0);
 }
